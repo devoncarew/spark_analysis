@@ -23,8 +23,6 @@ class DartBuilder extends Builder {
   }
 
   Future build(ResourceChangeEvent event, ProgressMonitor monitor) {
-    if (_disableDartAnalyzer) return new Future.value();
-
     List<ChangeDelta> changes = event.changes.where(
         (c) => c.resource is File && _includeFile(c.resource)).toList();
     List<ChangeDelta> projectDeletes = event.changes.where(
