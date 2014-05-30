@@ -1,0 +1,7 @@
+name: spark_analysis
+version: 0.1.0
+author: Devon Carew <devoncarew@google.com>
+description: An analysis component for Spark.
+homepage: https://github.com/devoncarew/spark_analysis
+environment:
+  sdk: ">=1.0.0 <2.0.0"
